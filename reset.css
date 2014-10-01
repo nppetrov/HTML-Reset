@@ -18,9 +18,21 @@
     font: inherit;
     font-size: 100%;
     text-transform: inherit;
+    vertical-align: baseline;
     -ms-text-size-adjust: 100%; /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */
     -webkit-text-size-adjust: 100%;
-    vertical-align: baseline;
+}
+
+/**
+ * Add `box-sizing: border-box` by default for all browsers.
+ */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 abbr { border-bottom: 1px dotted; cursor: help; }
