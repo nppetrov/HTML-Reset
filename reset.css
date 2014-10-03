@@ -4,7 +4,8 @@
  * A general reset stylesheet. This document has been written in accordance with my experience and needs.
  * Some pieces are taken from Foundation's Normalize CSS.
  *
- * @version 1.0.0
+ * @link https://github.com/nppetrov/HTML-Reset
+ * @version 1.0.1
  */
 
 * {
@@ -64,6 +65,10 @@ img, iframe {
     height: auto;
     max-width: 100%;
     vertical-align: bottom; /* Remove the gap on the bottom of the element */
+}
+
+ul, ol {
+    list-style-position: inside;
 }
 
 /**
