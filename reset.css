@@ -61,7 +61,7 @@ textarea {
     resize: none;
 }
 
-img, iframe {
+img, iframe, embed, object, video {
     height: auto;
     max-width: 100%;
     vertical-align: bottom; /* Remove the gap on the bottom of the element */
