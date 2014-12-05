@@ -41,7 +41,7 @@ abbr { border-bottom: 1px dotted; cursor: help; }
 h1, h2, h3, h4, h5, h6, b, strong { font-weight: bold; }
 i, em { font-style: italic; }
 
-blockquote, q { quotes: none; }
+q { quotes: none; }
 
 button { overflow: visible; } /* Address `overflow` set to `hidden` in IE */
 
@@ -62,9 +62,16 @@ textarea {
 }
 
 img, iframe, embed, object, video {
-    height: auto;
     max-width: 100%;
     vertical-align: bottom; /* Remove the gap on the bottom of the element */
+}
+
+img {
+    height: auto; /* Fix image ratio if max-width is applied */
+}
+
+input, select, textarea {
+    max-width: 100%;
 }
 
 ul, ol {
